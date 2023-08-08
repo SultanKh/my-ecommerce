@@ -1,0 +1,32 @@
+@font-face {
+    font-family: searchFont;
+    src: url(https://fonts.googleapis.com/css?family=Roboto) ;
+  }
+
+
+
+
+.form__input {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    border-radius: 0.2rem;
+    background-color: rgb(196, 196, 196);
+    border: 0.5rem;
+    width: 90%;
+    display: block;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .form__input {
+    margin: 0;
+    padding: 1.3rem;
+    width: 360px;
+  }
+}

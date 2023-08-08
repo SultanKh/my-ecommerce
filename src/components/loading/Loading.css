@@ -1,0 +1,97 @@
+
+.Loading {
+    box-sizing: border-box;
+	transform-style: preserve-3d;
+}
+.Loading .content {
+	width: 50vmin;
+	height: 50vmin;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	perspective: 1000vmin;
+
+
+}
+
+.Loading .bars {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	padding: 6.5vmin 3vmin;
+	animation: mirror1 calc(2s * 2) ease 0s infinite ;
+}
+
+.Loading .bars + .bars {
+	transform: rotate(90deg) rotateX(180deg);
+	animation: mirror2 calc(2s * 2) ease calc(2s / 2) infinite;
+}
+
+.Loading .bar {
+	width: 44vmin;
+	height: 3vmin;
+	margin: 2vmin 0vmin;
+	background: linear-gradient(90deg, #fff0 33%, #8b8b8b 33% 67%, #fff0 67% 100%);
+	animation: grow 2s ease-in-out 0s infinite alternate; 
+	background-size: 300%;
+	background-position-x: -203%;
+}
+
+@keyframes mirror1 {
+	0%, 47%, 99.99%, 100% { transform: rotate(180deg) rotateX(0deg); }
+	47.01%, 99.98% { transform: rotate(180deg) rotateX(180deg); }
+}
+
+@keyframes mirror2 {
+	0%, 47%, 99.99%, 100% { transform: rotate(90deg) rotateX(180deg); }
+	47.01%, 99.98% { transform: rotate(90deg) rotateX(0deg); }
+}
+
+@keyframes grow {
+	0%, 25% { background-position-x: -297%; }
+	45%, 55% { background-position-x: -250%; }
+	75%, 100% { background-position-x: -203%; }
+}
+
+.bar:nth-child(2) {
+	animation-delay: calc(2s * -0.02);
+}
+.bar:nth-child(3) {
+	animation-delay: calc(2s * -0.04);
+}
+.bar:nth-child(4) {
+	animation-delay: calc(2s * -0.06);
+}
+.bar:nth-child(5) {
+	animation-delay: calc(2s * -0.08);
+}
+.bar:nth-child(6) {
+	animation-delay: calc(2s * -0.1);
+}
+.bar:nth-child(7) {
+	animation-delay: calc(2s * -0.12);
+}
+
+.bars:nth-child(2) .bar:nth-child(1) {
+	animation-delay: calc(calc(2s * -0.001) - calc(2s / 2));
+}
+.bars:nth-child(2) .bar:nth-child(2) {
+	animation-delay: calc(calc(2s * -0.02) - calc(2s / 2));
+}
+.bars:nth-child(2) .bar:nth-child(3) {
+	animation-delay: calc(calc(2s * -0.04) - calc(2s / 2));
+}
+.bars:nth-child(2) .bar:nth-child(4) {
+	animation-delay: calc(calc(2s * -0.06) - calc(2s / 2));
+}
+.bars:nth-child(2) .bar:nth-child(5) {
+	animation-delay: calc(calc(2s * -0.08) - calc(2s / 2));
+}
+.bars:nth-child(2) .bar:nth-child(6) {
+	animation-delay: calc(calc(2s * -0.1) - calc(2s / 2));
+}
+.bars:nth-child(2) .bar:nth-child(7) {
+	animation-delay: calc(calc(2s * -0.12) - calc(2s / 2));
+}

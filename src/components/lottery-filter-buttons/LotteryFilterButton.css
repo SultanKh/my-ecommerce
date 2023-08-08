@@ -1,0 +1,28 @@
+.LotteryFilterButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #c5c3c39d; /* YouTube Music's red color */
+    color: #000000;
+    font-size: 16px;
+    font-weight: lighter;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.LotteryFilterButton:hover {
+    transform: scale(1.05);
+}
+
+.LotteryFilterButton.clicked, .LotteryFilterButton:active {
+    background-color: #326fa19d; /* YouTube Music's red color */
+    border: 1px solid #0d5a999d;
+    color: #17009bcc;
+}

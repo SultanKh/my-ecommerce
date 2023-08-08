@@ -1,0 +1,31 @@
+.LotteryButton {
+
+    border-radius: 999px;
+    box-sizing: border-box;
+    
+    cursor: pointer;
+    font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 130px;
+    word-break: break-word;
+    border: 0;
+    margin: 0 0.2rem;
+}
+
+.LotteryButton.main {
+    background: #9e1b32;
+    color: #FFF;
+}
+
+.LotteryButton.secondary {
+    background: #F9F6EE;
+    color: #616161;
+}
